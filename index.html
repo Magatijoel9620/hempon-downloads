@@ -1,152 +1,1076 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#080d0c">
-  <meta name="description" content="Discover Farmora, Landlord Ledger and InvoiceEasy — practical business software by Hempon Group. Download Android apps or open supported web apps.">
-  <link rel="canonical" href="https://downloads.hempongroup.co.ke/">
-  <meta property="og:title" content="Hempon Group — Apps & Downloads">
-  <meta property="og:description" content="Practical software for farms, rental properties and invoicing.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://downloads.hempongroup.co.ke/">
-  <title>Apps & Downloads | Hempon Group</title>
-  <style>
-    :root{color-scheme:dark;--bg:#080d0c;--surface:#101816;--surface2:#151f1c;--border:rgba(255,255,255,.09);--text:#f2f7f4;--muted:#9baaa3;--teal:#0f766e;--bright:#42d6bd;--max:1160px;--radius:24px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:radial-gradient(ellipse at 50% -10%,rgba(15,118,110,.2),transparent 42rem),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,a{ -webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--bright);outline-offset:4px}.container{width:min(var(--max),calc(100% - 40px));margin:auto}
-    .announcement{border-bottom:1px solid var(--border);text-align:center;padding:9px 16px;color:var(--muted);font-size:11px;letter-spacing:.03em}.announcement strong{color:var(--bright);font-weight:650}
-    header{position:sticky;top:0;z-index:10;background:rgba(8,13,12,.84);backdrop-filter:blur(18px);border-bottom:1px solid var(--border)}.nav{min-height:76px;display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{display:inline-flex;align-items:center;gap:12px;font-weight:760;letter-spacing:-.035em}.brand-logo{width:42px;height:42px;object-fit:contain;border-radius:12px}.brand-mark{width:40px;height:40px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(145deg,#168d80,#07554f);box-shadow:0 5px 24px #0f766e33}.brand-name{font-size:15px}.brand-sub{display:block;color:var(--muted);font-size:9px;font-weight:600;letter-spacing:.17em;text-transform:uppercase}.nav-links{display:flex;align-items:center;gap:26px;color:var(--muted);font-size:12px}.nav-links a:hover,.footer-links a:hover{color:var(--text)}.nav-cta{border:1px solid var(--border);border-radius:100px;padding:10px 15px;color:var(--text)!important}
-    .hero{position:relative;overflow:hidden;text-align:center;padding:104px 0 72px}.hero:before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;left:50%;top:15px;transform:translateX(-50%);background:#0f766e1c;filter:blur(95px);pointer-events:none}.hero-content{position:relative}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 12px;border:1px solid #42d6bd33;border-radius:100px;color:#a8e9dc;background:#0f766e1a;font-size:10px;font-weight:750;letter-spacing:.12em;text-transform:uppercase}.live-dot{width:6px;height:6px;background:var(--bright);border-radius:50%;box-shadow:0 0 12px #42d6bd99}h1{margin:26px 0 20px;font-size:clamp(43px,7.5vw,78px);line-height:1.02;letter-spacing:-.067em;font-weight:780}.gradient-text{background:linear-gradient(100deg,#fff 10%,#80e4d2 75%,#36b8a5);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-copy{max-width:610px;margin:auto;color:var(--muted);font-size:clamp(14px,2vw,17px);line-height:1.85}.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}.button{min-height:47px;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border:1px solid transparent;border-radius:12px;font:inherit;font-size:12px;font-weight:720;transition:transform .22s,background .22s,border-color .22s;cursor:pointer}.button:hover{transform:translateY(-2px)}.button-primary{background:var(--teal);color:#fff;box-shadow:0 6px 24px #0f766e2e}.button-primary:hover,.download-button:hover{background:#13877d}.button-secondary{border-color:var(--border);color:var(--text);background:#ffffff06}.button-secondary:hover{background:#ffffff0d}.trust-row{display:flex;justify-content:center;flex-wrap:wrap;gap:22px;margin-top:33px;color:#91a39a;font-size:11px}.trust-item{display:inline-flex;align-items:center;gap:7px}.trust-item svg{color:var(--bright)}
-    .section{padding:45px 0 88px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:28px}.section-kicker{margin-bottom:8px;color:var(--bright);font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}h2{margin:0;font-size:clamp(28px,4vw,40px);line-height:1.14;letter-spacing:-.05em}.section-description{max-width:440px;margin:10px 0 0;color:var(--muted);font-size:13px}.platform-label{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--border);padding:8px 11px;border-radius:100px;color:var(--muted);font-size:10px;white-space:nowrap}
-    .apps-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.app-card{position:relative;display:flex;flex-direction:column;min-width:0;padding:23px;overflow:hidden;border:1px solid var(--border);border-radius:var(--radius);background:linear-gradient(155deg,#ffffff08,transparent 55%),var(--surface);transition:border-color .25s,transform .25s,box-shadow .25s}.app-card:hover{transform:translateY(-5px);border-color:color-mix(in srgb,var(--accent) 48%,transparent);box-shadow:0 20px 55px #0003}.app-card:before{content:"";position:absolute;width:150px;height:150px;top:-85px;right:-65px;border-radius:50%;background:var(--accent);opacity:.13;filter:blur(42px);pointer-events:none}.app-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.app-icon{display:grid;place-items:center;width:62px;height:62px;flex-shrink:0;border:1px solid #ffffff18;border-radius:17px;background:#fff08;box-shadow:inset 0 1px #ffffff12}.app-icon img{width:100%;height:100%;object-fit:contain;border-radius:15px}.version{color:var(--muted);border:1px solid var(--border);background:#ffffff06;border-radius:100px;padding:5px 9px;font-size:10px;white-space:nowrap}.app-card h3{margin:22px 0 7px;font-size:22px;letter-spacing:-.045em}.app-description{min-height:64px;margin:0;color:var(--muted);font-size:12px;line-height:1.8}.feature-list{display:grid;gap:10px;list-style:none;padding:18px 0;margin:18px 0 20px;border-top:1px solid var(--border);flex:1}.feature-list li{display:flex;align-items:flex-start;gap:9px;color:#c3cec8;font-size:11px}.feature-list svg{flex-shrink:0;margin-top:2px;color:var(--accent)}.card-actions{display:grid;gap:9px}.download-button{width:100%;min-height:45px;border-radius:11px;background:var(--teal);color:white;font-size:12px}.web-button{width:100%;min-height:43px;font-size:11px}.file-note{margin-top:11px;color:#77877f;font-size:10px;text-align:center}.app-icon-fallback{font-size:24px;font-weight:800;color:white}
-    .how-section{padding:70px 0 82px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:#ffffff03}.center-heading{text-align:center;margin-bottom:38px}.center-heading .section-description{margin-inline:auto}.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:23px;border:1px solid var(--border);border-radius:17px;background:#ffffff05}.step-number{display:grid;place-items:center;width:35px;height:35px;margin-bottom:18px;border-radius:11px;background:#0f766e2e;color:var(--bright);font-size:12px;font-weight:800}.step h3{margin:0 0 8px;font-size:15px}.step p{margin:0;color:var(--muted);font-size:12px;line-height:1.8}.security-note{display:flex;align-items:flex-start;gap:13px;max-width:780px;margin:25px auto 0;padding:17px 19px;border:1px solid #42d6bd2b;border-radius:14px;background:#0f766e0f}.security-note svg{flex-shrink:0;margin-top:2px;color:var(--bright)}.security-note p{margin:0;color:var(--muted);font-size:11px;line-height:1.8}.security-note strong{color:var(--text)}
-    .faq-section{padding:78px 0}.faq-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}.faq-intro p{color:var(--muted);font-size:13px;line-height:1.8}.faq-list{border-top:1px solid var(--border)}details{border-bottom:1px solid var(--border)}summary{position:relative;list-style:none;padding:19px 30px 19px 0;cursor:pointer;font-size:13px;font-weight:650}summary::-webkit-details-marker{display:none}summary:after{content:"+";position:absolute;right:0;top:14px;color:var(--bright);font-size:20px;font-weight:400}details[open] summary:after{content:"−"}details p{margin:0;padding:0 0 19px;color:var(--muted);font-size:12px;line-height:1.9}
-    footer{padding:28px 0;border-top:1px solid var(--border)}.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px}.footer-copy{color:var(--muted);font-size:11px}.footer-links{display:flex;flex-wrap:wrap;gap:20px;color:var(--muted);font-size:11px}.toast{position:fixed;z-index:30;bottom:20px;left:50%;transform:translate(-50%,20px);width:max-content;max-width:calc(100% - 30px);padding:12px 16px;border:1px solid var(--border);border-radius:12px;background:#18221e;color:var(--text);font-size:12px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}.toast.visible{opacity:1;transform:translate(-50%,0)}
-    @media(max-width:900px){.apps-grid{grid-template-columns:1fr;max-width:650px;margin-inline:auto}.app-card{padding:23px}.app-description{min-height:0}.feature-list{grid-template-columns:repeat(2,minmax(0,1fr))}.faq-layout{grid-template-columns:1fr;gap:25px}.section-heading{align-items:flex-start;flex-direction:column}.platform-label{align-self:flex-start}}
-    @media(max-width:560px){.container{width:min(100% - 30px,var(--max))}.nav{min-height:66px}.nav-links{gap:12px;font-size:11px}.nav-links .hide-mobile{display:none}.brand-name{font-size:14px}.brand-mark,.brand-logo{width:36px;height:36px}.hero{padding:76px 0 50px}h1{font-size:clamp(40px,12vw,57px)}.section{padding:36px 0 62px}.feature-list{grid-template-columns:1fr}.steps-grid{grid-template-columns:1fr}.how-section,.faq-section{padding:55px 0}.footer-inner{align-items:flex-start;flex-direction:column}.trust-row{gap:13px}}
-    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
-  </style>
-</head>
-<body>
-  <div class="announcement">Software for better business. <strong>Built by Hempon Group.</strong></div>
-  <header>
-    <div class="container nav">
-      <a class="brand" href="https://www.hempongroup.co.ke/" aria-label="Hempon Group home">
-        <img class="brand-logo" src="./HG.png" alt="Hempon Group logo" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
-        
-        <span class="brand-name">HEMPON GROUP<span class="brand-sub">Software &amp; Technology</span></span>
-      </a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a class="hide-mobile" href="#apps">Our apps</a><a class="hide-mobile" href="#installation">Installation</a>
-        <a class="nav-cta" href="https://www.hempongroup.co.ke/">Main website ↗</a>
-      </nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#080d0c" />
+    <meta
+      name="description"
+      content="Discover and download Farmora, Landlord Ledger and InvoiceEasy — practical business software by Hempon Group."
+    />
+    <meta property="og:title" content="Hempon Group — Get Our Apps" />
+    <meta
+      property="og:description"
+      content="Software for better business. Explore our Android apps and web apps."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://downloads.hempongroup.co.ke/" />
+    <link rel="canonical" href="https://downloads.hempongroup.co.ke/" />
+    <title>Get Our Apps | Hempon Group</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #080d0c;
+        --panel: #101816;
+        --panel2: #141f1b;
+        --line: rgba(255, 255, 255, 0.1);
+        --text: #f2f7f4;
+        --muted: #9baaa3;
+        --mint: #75e4cc;
+        --teal: #11786d;
+        --max: 1160px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 95px;
+      }
+      body {
+        margin: 0;
+        background:
+          radial-gradient(
+            ellipse at 50% -10%,
+            rgba(17, 120, 109, 0.25),
+            transparent 42rem
+          ),
+          var(--bg);
+        color: var(--text);
+        font-family:
+          Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          sans-serif;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      a,
+      button {
+        -webkit-tap-highlight-color: transparent;
+      }
+      a:focus-visible,
+      button:focus-visible,
+      summary:focus-visible {
+        outline: 2px solid var(--mint);
+        outline-offset: 4px;
+      }
+      .container {
+        width: min(var(--max), calc(100% - 44px));
+        margin-inline: auto;
+      }
+      .announcement {
+        padding: 8px 15px;
+        text-align: center;
+        border-bottom: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 11px;
+        letter-spacing: 0.03em;
+      }
+      .announcement span {
+        color: var(--mint);
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        background: rgba(8, 13, 12, 0.84);
+        backdrop-filter: blur(18px);
+        border-bottom: 1px solid var(--line);
+      }
+      .nav {
+        min-height: 76px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 22px;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 750;
+        letter-spacing: -0.04em;
+      }
+      .brand img {
+        width: 42px;
+        height: 42px;
+        object-fit: contain;
+        border-radius: 12px;
+      }
+      .brand-name {
+        font-size: 14px;
+      }
+      .brand-sub {
+        display: block;
+        color: var(--muted);
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+      .nav-links a:hover,
+      .footer-links a:hover {
+        color: var(--mint);
+      }
+      .nav-cta {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 9px 14px;
+        color: var(--text) !important;
+      }
+      .hero {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        padding: 100px 0 62px;
+      }
+      .hero:before {
+        content: "";
+        position: absolute;
+        width: 440px;
+        height: 440px;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        background: rgba(20, 156, 134, 0.12);
+        filter: blur(95px);
+        pointer-events: none;
+      }
+      .hero-content {
+        position: relative;
+      }
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        padding: 7px 12px;
+        border: 1px solid rgba(117, 228, 204, 0.22);
+        border-radius: 999px;
+        color: #b7f3e6;
+        background: rgba(17, 120, 109, 0.12);
+        font-size: 10px;
+        font-weight: 750;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      .live-dot {
+        width: 6px;
+        height: 6px;
+        background: var(--mint);
+        border-radius: 50%;
+        box-shadow: 0 0 12px #75e4cc88;
+      }
+      h1 {
+        margin: 25px 0 18px;
+        font-size: clamp(43px, 7.5vw, 82px);
+        line-height: 0.99;
+        letter-spacing: -0.075em;
+        font-weight: 780;
+      }
+      .gradient {
+        background: linear-gradient(100deg, #fff 10%, #a3f0df 72%, #4cc8b0);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      .hero-copy {
+        max-width: 620px;
+        margin: auto;
+        color: var(--muted);
+        font-size: clamp(14px, 2vw, 17px);
+        line-height: 1.85;
+      }
+      .actions {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 28px;
+      }
+      .button {
+        display: inline-flex;
+        min-height: 47px;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        padding: 12px 18px;
+        border: 1px solid transparent;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: 750;
+        transition:
+          transform 0.22s,
+          background 0.22s,
+          border-color 0.22s;
+      }
+      .button:hover {
+        transform: translateY(-2px);
+      }
+      .primary {
+        background: var(--teal);
+        color: white;
+        box-shadow: 0 7px 26px #11786d30;
+      }
+      .primary:hover {
+        background: #168b7d;
+      }
+      .secondary {
+        border-color: var(--line);
+        background: #ffffff06;
+      }
+      .secondary:hover {
+        background: #ffffff0d;
+      }
+      .trust {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 29px;
+        color: #9aaba3;
+        font-size: 10px;
+      }
+      .trust span {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+      }
+      .trust b {
+        color: var(--mint);
+        font-weight: 600;
+      }
+      .section {
+        padding: 42px 0 82px;
+      }
+      .section-heading {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 25px;
+        margin-bottom: 28px;
+      }
+      .kicker {
+        margin-bottom: 8px;
+        color: var(--mint);
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.17em;
+        text-transform: uppercase;
+      }
+      h2 {
+        margin: 0;
+        font-size: clamp(28px, 4vw, 42px);
+        line-height: 1.1;
+        letter-spacing: -0.055em;
+      }
+      .section-description {
+        max-width: 470px;
+        margin: 10px 0 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .platform {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 8px 11px;
+        color: var(--muted);
+        font-size: 10px;
+        white-space: nowrap;
+      }
+      .apps {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 17px;
+      }
+      .app-card {
+        --accent: #75e4cc;
+        position: relative;
+        isolation: isolate;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        overflow: hidden;
+        padding: 24px;
+        border: 1px solid var(--line);
+        border-radius: 23px;
+        background:
+          linear-gradient(155deg, #ffffff08, transparent 54%), var(--panel);
+        transition:
+          transform 0.28s,
+          border-color 0.28s,
+          background 0.28s;
+      }
+      .app-card:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        right: -70px;
+        top: -90px;
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        background: var(--accent);
+        opacity: 0.13;
+        filter: blur(50px);
+        transition: opacity 0.3s;
+      }
+      .app-card:hover {
+        transform: translateY(-5px);
+        border-color: color-mix(in srgb, var(--accent), transparent 55%);
+      }
+      .app-card:hover:before {
+        opacity: 0.22;
+      }
+      .app-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+      }
+      .app-icon {
+        width: 60px;
+        height: 60px;
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+        border: 1px solid #ffffff18;
+        border-radius: 17px;
+        background: #ffffff08;
+        overflow: hidden;
+      }
+      .app-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 5px;
+      }
+      .tag {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 5px 9px;
+        color: var(--muted);
+        font-size: 9px;
+        white-space: nowrap;
+      }
+      .app-card h3 {
+        margin: 22px 0 7px;
+        font-size: 23px;
+        letter-spacing: -0.05em;
+      }
+      .app-description {
+        min-height: 66px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.8;
+      }
+      .features {
+        display: grid;
+        gap: 10px;
+        list-style: none;
+        padding: 18px 0;
+        margin: 18px 0 20px;
+        border-top: 1px solid var(--line);
+        flex: 1;
+      }
+      .features li {
+        display: flex;
+        gap: 9px;
+        color: #c5d0ca;
+        font-size: 11px;
+      }
+      .features li:before {
+        content: "✓";
+        color: var(--accent);
+        font-weight: 800;
+      }
+      .card-actions {
+        display: grid;
+        gap: 9px;
+      }
+      .card-actions .button {
+        width: 100%;
+      }
+      .more-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        min-height: 42px;
+        padding: 10px 14px;
+        border: 1px solid color-mix(in srgb, var(--accent), transparent 58%);
+        border-radius: 12px;
+        color: var(--accent);
+        font-size: 11px;
+        font-weight: 700;
+        text-decoration: none;
+        transition:
+          background 0.2s,
+          border-color 0.2s,
+          transform 0.2s;
+      }
+      .more-info:hover {
+        background: color-mix(in srgb, var(--accent), transparent 92%);
+        border-color: var(--accent);
+        transform: translateY(-1px);
+      }
+      .download {
+        background: var(--teal);
+      }
+      .download:hover {
+        background: #168b7d;
+      }
+      .webapp {
+        background: #ffffff05;
+        border-color: var(--line);
+      }
+      .webapp:hover {
+        border-color: color-mix(in srgb, var(--accent), transparent 45%);
+      }
+      .file-note {
+        margin-top: 11px;
+        color: #77877f;
+        font-size: 10px;
+        text-align: center;
+      }
+      .how {
+        padding: 68px 0 76px;
+        border-block: 1px solid var(--line);
+        background: #ffffff03;
+      }
+      .center {
+        text-align: center;
+        margin-bottom: 35px;
+      }
+      .center .section-description {
+        margin-inline: auto;
+      }
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 17px;
+      }
+      .step {
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-radius: 17px;
+        background: #ffffff03;
+      }
+      .step-no {
+        display: grid;
+        place-items: center;
+        width: 34px;
+        height: 34px;
+        margin-bottom: 16px;
+        border-radius: 11px;
+        background: #11786d2c;
+        color: var(--mint);
+        font-size: 11px;
+        font-weight: 800;
+      }
+      .step h3 {
+        margin: 0 0 7px;
+        font-size: 14px;
+      }
+      .step p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 11px;
+        line-height: 1.85;
+      }
+      .note {
+        display: flex;
+        gap: 13px;
+        max-width: 780px;
+        margin: 23px auto 0;
+        padding: 16px 18px;
+        border: 1px solid #75e4cc26;
+        border-radius: 14px;
+        background: #11786d0d;
+      }
+      .note .check {
+        color: var(--mint);
+      }
+      .note p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 11px;
+        line-height: 1.85;
+      }
+      .note strong {
+        color: var(--text);
+      }
+      .faq {
+        padding: 76px 0;
+      }
+      .faq-layout {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 60px;
+      }
+      .faq-intro p {
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.9;
+      }
+      .faq-list {
+        border-top: 1px solid var(--line);
+      }
+      details {
+        border-bottom: 1px solid var(--line);
+      }
+      summary {
+        position: relative;
+        list-style: none;
+        padding: 18px 30px 18px 0;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 650;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      summary:after {
+        content: "+";
+        position: absolute;
+        right: 1px;
+        top: 13px;
+        color: var(--mint);
+        font-size: 20px;
+        font-weight: 400;
+      }
+      details[open] summary:after {
+        content: "−";
+      }
+      details p {
+        margin: 0;
+        padding: 0 0 18px;
+        color: var(--muted);
+        font-size: 11px;
+        line-height: 1.9;
+      }
+      footer {
+        padding: 27px 0;
+        border-top: 1px solid var(--line);
+      }
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .footer-copy {
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 10px;
+      }
+      .footer-links {
+        display: flex;
+        gap: 19px;
+        flex-wrap: wrap;
+        color: var(--muted);
+        font-size: 10px;
+      }
+      .toast {
+        position: fixed;
+        z-index: 40;
+        left: 50%;
+        bottom: 20px;
+        transform: translate(-50%, 15px);
+        width: max-content;
+        max-width: calc(100% - 30px);
+        padding: 11px 15px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: #18221e;
+        color: var(--text);
+        font-size: 11px;
+        opacity: 0;
+        pointer-events: none;
+        transition:
+          opacity 0.2s,
+          transform 0.2s;
+      }
+      .toast.show {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+      @media (max-width: 900px) {
+        .apps {
+          grid-template-columns: 1fr;
+        }
+        .app-card {
+          padding: 23px;
+        }
+        .app-description {
+          min-height: 0;
+        }
+        .features {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        .faq-layout {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+        .app-card h3 {
+          margin-top: 18px;
+        }
+      }
+      @media (max-width: 600px) {
+        .container {
+          width: calc(100% - 30px);
+        }
+        .nav {
+          min-height: 66px;
+        }
+        .brand img {
+          width: 36px;
+          height: 36px;
+        }
+        .brand-name {
+          font-size: 12px;
+        }
+        .nav-links {
+          gap: 11px;
+          font-size: 10px;
+        }
+        .nav-links .mobile-hide {
+          display: none;
+        }
+        .nav-cta {
+          padding: 8px 10px;
+        }
+        .hero {
+          padding: 75px 0 48px;
+        }
+        h1 {
+          font-size: clamp(40px, 12vw, 58px);
+        }
+        .section {
+          padding: 35px 0 60px;
+        }
+        .section-heading {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .features {
+          grid-template-columns: 1fr;
+        }
+        .steps {
+          grid-template-columns: 1fr;
+        }
+        .how,
+        .faq {
+          padding: 55px 0;
+        }
+        .footer-inner {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .trust {
+          gap: 12px;
+        }
+        .platform {
+          white-space: normal;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *:before,
+        *:after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="announcement">
+      Software for better business. <span>Built by Hempon Group.</span>
     </div>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="container hero-content">
-        <div class="eyebrow"><span class="live-dot"></span> Practical tools. Real work.</div>
-        <h1>Good software.<br><span class="gradient-text">Simpler business.</span></h1>
-        <p class="hero-copy">Explore practical tools built to help you manage farm operations, rental properties and business invoicing. Choose an Android app or open a supported web experience.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#apps">Explore our apps <span aria-hidden="true">↗</span></a>
-          <a class="button button-secondary" href="https://www.hempongroup.co.ke/">About Hempon Group</a>
-        </div>
-        <div class="trust-row">
-          <span class="trust-item">✓ Direct Android downloads</span><span class="trust-item">◇ Web app options</span><span class="trust-item">↗ Built by Hempon Group</span>
-        </div>
+    <header>
+      <div class="container nav">
+        <a
+          class="brand"
+          href="https://www.hempongroup.co.ke/"
+          aria-label="Hempon Group home"
+        >
+          <img src="HG.png" alt="Hempon Group logo" />
+          <span class="brand-name"
+            >HEMPON GROUP<span class="brand-sub"
+              >Software &amp; Technology</span
+            ></span
+          >
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a class="mobile-hide" href="#apps">Our apps</a
+          ><a class="mobile-hide" href="#installation">How it works</a
+          ><a class="nav-cta" href="https://www.hempongroup.co.ke/"
+            >Main website ↗</a
+          >
+        </nav>
       </div>
-    </section>
-    <section class="section" id="apps">
-      <div class="container">
-        <div class="section-heading">
-          <div><div class="section-kicker">The Hempon collection</div><h2>Choose your app.</h2><p class="section-description">Three products. Different everyday challenges. One goal: making work easier to manage.</p></div>
-          <div class="platform-label">Android apps <span aria-hidden="true">·</span> Web options for selected products</div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="eyebrow">
+            <span class="live-dot"></span> Practical tools. Real work.
+          </div>
+          <h1>
+            Good software.<br /><span class="gradient">Simpler business.</span>
+          </h1>
+          <p class="hero-copy">
+            Purpose-built tools for farm operations, rental property management
+            and invoicing. Download the Android app or open the web experience
+            to get started.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#apps"
+              >Explore our apps <span aria-hidden="true">↘</span></a
+            ><a class="button secondary" href="https://www.hempongroup.co.ke/"
+              >About Hempon Group ↗</a
+            >
+          </div>
+          <div class="trust">
+            <span><b>✓</b> Official app downloads</span
+            ><span><b>✓</b> Web app options</span
+            ><span><b>✓</b> Built by Hempon Group</span>
+          </div>
         </div>
-        <div class="apps-grid">
-          <article class="app-card" style="--accent:#67d8a2">
-            <div class="app-top"><div class="app-icon"><img src="./farmora_icon.png" alt="Farmora app icon" onerror="this.hidden=true;this.parentElement.innerHTML='<span class=&quot;app-icon-fallback&quot;>F</span>'"></div><span class="version">Android APK</span></div>
-            <h3>Farmora</h3><p class="app-description">Get a clearer picture of your farm. Organise day-to-day operations, records, stock and financial activity in one place.</p>
-            <ul class="feature-list">
-              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Farm records and operations</li>
-              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Sales, expenses and inventory</li>
-              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Reports and business insights</li>
-            </ul>
-            <div class="card-actions">
-              <a class="button download-button" href="https://github.com/Magatijoel9620/farmora-downloads/releases/latest/download/farmora.apk" data-app="Farmora">↓ Download Farmora APK</a>
-              <a class="button button-secondary web-button" href="https://farmora.hempongroup.co.ke/" target="_blank" rel="noopener noreferrer">Open Farmora Web ↗</a>
-            </div><div class="file-note">APK installer · Android · Web app available</div>
-          </article>
-          <article class="app-card" style="--accent:#c9a4ff">
-            <div class="app-top"><div class="app-icon"><img src="./launcher.png" alt="Landlord Ledger app icon" onerror="this.hidden=true;this.parentElement.innerHTML='<span class=&quot;app-icon-fallback&quot;>LL</span>'"></div><span class="version">Android APK</span></div>
-            <h3>Landlord Ledger</h3><p class="app-description">Stay on top of rental properties with a practical view of units, tenant records, rent and property operations.</p>
-            <ul class="feature-list">
-              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Properties and units</li>
-              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Tenant and rent records</li>
-              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Payments, arrears and reporting</li>
-            </ul>
-            <div class="card-actions">
-              <a class="button download-button" href="https://github.com/Magatijoel9620/landlord-ledger-downloads/releases/latest/download/landlord-ledger.apk" data-app="Landlord Ledger">↓ Download Landlord Ledger APK</a>
-              <a class="button button-secondary web-button" href="https://ledger.hempongroup.co.ke/" target="_blank" rel="noopener noreferrer">Open Ledger Web ↗</a>
-            </div><div class="file-note">APK installer · Android · Web app available</div>
-          </article>
-          <article class="app-card" style="--accent:#69d8ef">
-            <div class="app-top"><div class="app-icon"><img src="./InvoiceEasy_Logo.png" alt="InvoiceEasy app logo" onerror="this.hidden=true;this.parentElement.innerHTML='<span class=&quot;app-icon-fallback&quot;>IE</span>'"></div><span class="version">Android APK</span></div>
-            <h3>InvoiceEasy</h3><p class="app-description">Create professional invoices, organise customer and product details, and keep track of payments without unnecessary complexity.</p>
-            <ul class="feature-list">
-              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Create and manage invoices</li>
-              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Customer and product records</li>
-              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Receipts and payment tracking</li>
-            </ul>
-            <div class="card-actions">
-              <a class="button download-button" href="https://github.com/Magatijoel9620/invoiceeasy-downloads/releases/latest/download/invoice-easy.apk" data-app="InvoiceEasy">↓ Download InvoiceEasy APK</a>
-            </div><div class="file-note">APK installer · Android</div>
-          </article>
+      </section>
+      <section class="section" id="apps">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <div class="kicker">The Hempon collection</div>
+              <h2>Choose the tool for your work.</h2>
+              <p class="section-description">
+                Three products. Three different challenges. One goal: making
+                everyday work easier.
+              </p>
+            </div>
+            <div class="platform">↗ Android + web options</div>
+          </div>
+          <div class="apps">
+            <article class="app-card" style="--accent: #8be0a9">
+              <div class="app-top">
+                <div class="app-icon">
+                  <img src="farmora_icon.png" alt="Farmora app icon" />
+                </div>
+                <span class="tag">Android + Web</span>
+              </div>
+              <h3>Farmora</h3>
+              <p class="app-description">
+                Keep your farm operations, records and performance organised in
+                one place.
+              </p>
+              <ul class="features">
+                <li>Farm records and operations</li>
+                <li>Sales, expenses and inventory</li>
+                <li>Production, livestock and reports</li>
+              </ul>
+              <div class="card-actions">
+                <a
+                  class="button download"
+                  href="https://github.com/Magatijoel9620/farmora-downloads/releases/latest/download/farmora.apk"
+                  data-app="Farmora"
+                  >↓ Download Android APK</a
+                ><a
+                  class="button webapp"
+                  href="https://farmora.hempongroup.co.ke/"
+                  target="_blank"
+                  rel="noopener"
+                  >Open Farmora web app ↗</a
+                ><a
+                  class="more-info"
+                  href="https://portfolio.hempongroup.co.ke/projects/farmora"
+                  target="_blank"
+                  rel="noopener"
+                  >More about Farmora <span aria-hidden="true">↗</span></a
+                >
+              </div>
+              <div class="file-note">
+                APK installer · Android · Web app available
+              </div>
+            </article>
+            <article class="app-card" style="--accent: #c9a4ff">
+              <div class="app-top">
+                <div class="app-icon">
+                  <img src="launcher.png" alt="Landlord Ledger app icon" />
+                </div>
+                <span class="tag">Android + Web</span>
+              </div>
+              <h3>Landlord Ledger</h3>
+              <p class="app-description">
+                Manage rental properties, tenant records, rent tracking and
+                property workflows.
+              </p>
+              <ul class="features">
+                <li>Properties and units</li>
+                <li>Tenant and rent records</li>
+                <li>Property reporting and marketplace</li>
+              </ul>
+              <div class="card-actions">
+                <a
+                  class="button download"
+                  href="https://github.com/Magatijoel9620/landlord-ledger-downloads/releases/latest/download/landlord-ledger.apk"
+                  data-app="Landlord Ledger"
+                  >↓ Download Android APK</a
+                ><a
+                  class="button webapp"
+                  href="https://ledger.hempongroup.co.ke/"
+                  target="_blank"
+                  rel="noopener"
+                  >Open Landlord Ledger web app ↗</a
+                ><a
+                  class="more-info"
+                  href="https://portfolio.hempongroup.co.ke/projects/landlord-ledger"
+                  target="_blank"
+                  rel="noopener"
+                  >More about Landlord Ledger
+                  <span aria-hidden="true">↗</span></a
+                >
+              </div>
+              <div class="file-note">
+                APK installer · Android · Web app available
+              </div>
+            </article>
+            <article class="app-card" style="--accent: #69d8ef">
+              <div class="app-top">
+                <div class="app-icon">
+                  <img src="InvoiceEasy_Logo.png" alt="InvoiceEasy app logo" />
+                </div>
+                <span class="tag">Android</span>
+              </div>
+              <h3>InvoiceEasy</h3>
+              <p class="app-description">
+                Create professional invoices, organise customers and track
+                payments without unnecessary complexity.
+              </p>
+              <ul class="features">
+                <li>Create and manage invoices</li>
+                <li>Customer and product records</li>
+                <li>Payment tracking and reports</li>
+              </ul>
+              <div class="card-actions">
+                <a
+                  class="button download"
+                  href="https://github.com/Magatijoel9620/invoiceeasy-downloads/releases/latest/download/invoice-easy.apk"
+                  data-app="InvoiceEasy"
+                  >↓ Download Android APK</a
+                ><a
+                  class="more-info"
+                  href="https://portfolio.hempongroup.co.ke/projects/flutter-invoice-app"
+                  target="_blank"
+                  rel="noopener"
+                  >More about InvoiceEasy <span aria-hidden="true">↗</span></a
+                >
+              </div>
+              <div class="file-note">APK installer · Android</div>
+            </article>
+          </div>
         </div>
+      </section>
+      <section class="how" id="installation">
+        <div class="container">
+          <div class="center">
+            <div class="kicker">Up and running</div>
+            <h2>Start in three simple steps.</h2>
+            <p class="section-description">
+              Choose the app, install it securely, then sign in or complete
+              setup.
+            </p>
+          </div>
+          <div class="steps">
+            <article class="step">
+              <div class="step-no">01</div>
+              <h3>Choose your app</h3>
+              <p>
+                Select the product that fits your needs. Use the web app links
+                for Farmora or Landlord Ledger, or download an Android APK.
+              </p>
+            </article>
+            <article class="step">
+              <div class="step-no">02</div>
+              <h3>Install or open</h3>
+              <p>
+                For Android, open the downloaded APK and follow your device's
+                installation prompts. For web, open the app link in your
+                browser.
+              </p>
+            </article>
+            <article class="step">
+              <div class="step-no">03</div>
+              <h3>Set up and get going</h3>
+              <p>
+                Open the app and follow its sign-in or setup instructions. Keep
+                your sign-in details safe and use the official links on this
+                page.
+              </p>
+            </article>
+          </div>
+          <div class="note">
+            <span class="check" aria-hidden="true">◇</span>
+            <p>
+              <strong>Android installation note.</strong> These APKs are
+              distributed directly rather than through Google Play. Android may
+              show a warning or ask you to allow installation from your browser.
+              Continue only if you trust the source and understand the
+              permissions requested.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="faq" id="faq">
+        <div class="container faq-layout">
+          <div class="faq-intro">
+            <div class="kicker">Need a hand?</div>
+            <h2>Frequently asked questions.</h2>
+            <p>
+              Quick answers about app downloads, web access and installation.
+            </p>
+            <a class="button secondary" href="https://www.hempongroup.co.ke/"
+              >Visit Hempon Group ↗</a
+            >
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>
+                Can I use Farmora and Landlord Ledger without installing an APK?
+              </summary>
+              <p>
+                Yes. Open the web app links on this page to use Farmora or
+                Landlord Ledger in a supported browser. You can also install the
+                Android versions using their APK links.
+              </p>
+            </details>
+            <details>
+              <summary>Are the apps free to use?</summary>
+              <p>
+                Downloading an APK does not guarantee that every feature is
+                free. Individual products may offer trials, subscriptions or
+                usage limits. Check the relevant app for its current plans and
+                pricing.
+              </p>
+            </details>
+            <details>
+              <summary>Why does Android warn me about an APK?</summary>
+              <p>
+                Android applies additional caution to apps installed outside
+                Google Play. Verify that the download came from the official
+                Hempon Group download page before proceeding.
+              </p>
+            </details>
+            <details>
+              <summary>Can I update an existing Android installation?</summary>
+              <p>
+                Usually, an update can install over the existing app if it uses
+                the same application ID, a compatible signing key and a higher
+                version code. Back up important information before updating.
+              </p>
+            </details>
+            <details>
+              <summary>Can I install these APKs on an iPhone or iPad?</summary>
+              <p>
+                No. APK files are Android installers. On iPhone or iPad, use a
+                web app link where one is available.
+              </p>
+            </details>
+            <details>
+              <summary>What if a download or web app does not open?</summary>
+              <p>
+                Check your connection and try again. For APK downloads, confirm
+                available storage and that the download completed. If the issue
+                persists, visit the Hempon Group website for support
+                information.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <div>
+          <a class="brand" href="https://www.hempongroup.co.ke/"
+            ><img src="HG.png" alt="" /><span class="brand-name"
+              >HEMPON GROUP</span
+            ></a
+          >
+          <div class="footer-copy">
+            © <span id="year"></span> Hempon Group. All rights reserved.
+          </div>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="https://www.hempongroup.co.ke/">Website</a
+          ><a href="#apps">Downloads</a
+          ><a href="#installation">Installation help</a><a href="#faq">FAQs</a>
+        </nav>
       </div>
-    </section>
-    <section class="how-section" id="installation">
-      <div class="container">
-        <div class="center-heading"><div class="section-kicker">Up and running</div><h2>Get started in three steps.</h2><p class="section-description">Install an Android app from its APK, or open one of the available web apps in your browser.</p></div>
-        <div class="steps-grid">
-          <article class="step"><div class="step-number">01</div><h3>Choose your app</h3><p>Select the product that fits your needs. Use its Android download button or, where available, open the web app.</p></article>
-          <article class="step"><div class="step-number">02</div><h3>Install or open</h3><p>For APKs, open the downloaded file and follow Android's installation prompts. For web apps, open the link in a compatible browser.</p></article>
-          <article class="step"><div class="step-number">03</div><h3>Set up your workspace</h3><p>Launch the app and follow its sign-in or setup instructions. Review the product's available features and plan details.</p></article>
-        </div>
-        <div class="security-note"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3 20 6v5c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><p><strong>Installing Android APKs.</strong> These direct downloads are distributed outside Google Play, so Android may show an installation warning. Download only from the official Hempon Group download page, check the app and requested permissions, and do not bypass warnings you do not understand.</p></div>
-      </div>
-    </section>
-    <section class="faq-section" id="faq">
-      <div class="container faq-layout">
-        <div class="faq-intro"><div class="section-kicker">Need a hand?</div><h2>Frequently asked questions.</h2><p>Helpful notes about downloading, installation and accessing our web apps.</p><a class="button button-secondary" href="https://www.hempongroup.co.ke/">Visit Hempon Group ↗</a></div>
-        <div class="faq-list">
-          <details><summary>Are the apps free to download?</summary><p>Downloading an APK does not necessarily mean every feature is free. Products may have trials, subscriptions or usage limits. Check the relevant app for current plan and pricing details.</p></details>
-          <details><summary>Why does Android warn me about an APK?</summary><p>Android applies extra caution to apps installed outside Google Play. Only proceed when you trust the source and understand the permissions being requested.</p></details>
-          <details><summary>Can I update an app without uninstalling it?</summary><p>Usually, an update can install over an existing version if the application ID matches, the signing key is compatible and the new version code is higher. Back up important data before updating.</p></details>
-          <details><summary>Can I use Farmora or Landlord Ledger in a browser?</summary><p>Yes. Use the web app links on their respective cards. Availability and features may differ between the web experience and Android app.</p></details>
-          <details><summary>Can I install these APKs on an iPhone?</summary><p>No. Android APK files cannot be installed directly on an iPhone or iPad. Use a supported web app in your browser where one is available.</p></details>
-          <details><summary>What if a download or web app does not open?</summary><p>Check your connection and try again. If the problem persists, visit the Hempon Group website for contact and support information.</p></details>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer><div class="container footer-inner">
-    <div><a class="brand" href="https://www.hempongroup.co.ke/"><img class="brand-logo" src="./HG.png" alt="Hempon Group logo" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="brand-name">HEMPON GROUP</span></a><div class="footer-copy" style="margin-top:10px">© <span id="year"></span> Hempon Group. All rights reserved.</div></div>
-    <nav class="footer-links" aria-label="Footer navigation"><a href="https://www.hempongroup.co.ke/">Website</a><a href="#apps">Downloads</a><a href="#installation">Installation help</a><a href="#faq">FAQs</a></nav>
-  </div></footer>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-    const toast = document.getElementById("toast");
-    let toastTimeout;
-    document.querySelectorAll("[data-app]").forEach((link) => {
-      link.addEventListener("click", () => {
-        toast.textContent = "Opening the " + link.dataset.app + " download. Your browser will handle the file.";
-        toast.classList.add("visible");
-        clearTimeout(toastTimeout);
-        toastTimeout = setTimeout(() => toast.classList.remove("visible"), 3500);
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const toast = document.getElementById("toast");
+      let toastTimer;
+      document.querySelectorAll("[data-app]").forEach((link) =>
+        link.addEventListener("click", () => {
+          toast.textContent =
+            "Opening the " +
+            link.dataset.app +
+            " download. Your browser will handle the file.";
+          toast.classList.add("show");
+          clearTimeout(toastTimer);
+          toastTimer = setTimeout(() => toast.classList.remove("show"), 3200);
+        }),
+      );
+      // Respect the visitor's motion preference; native CSS handles reduced motion.
+      document.querySelectorAll(".app-card").forEach((card) => {
+        card.addEventListener("pointermove", (event) => {
+          if (
+            matchMedia("(prefers-reduced-motion: reduce)").matches ||
+            event.pointerType !== "mouse"
+          )
+            return;
+          const r = card.getBoundingClientRect();
+          card.style.background = `radial-gradient(circle at ${event.clientX - r.left}px ${event.clientY - r.top}px, color-mix(in srgb, var(--accent), transparent 94%), transparent 55%), linear-gradient(155deg,#ffffff08,transparent 54%), var(--panel)`;
+        });
+        card.addEventListener(
+          "pointerleave",
+          () => (card.style.background = ""),
+        );
       });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
