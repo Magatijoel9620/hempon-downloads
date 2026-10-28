@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#080d0c" />
+    <meta
+      name="description"
+      content="Website design and creation for businesses, professionals, organisations and campaigns by Hempon Group."
+    />
+    <meta property="og:title" content="Website Creation | Hempon Group" />
+    <meta
+      property="og:description"
+      content="Tell us about the website you need and start a conversation with Hempon Group."
+    />
+    <meta property="og:type" content="website" />
+    <title>Website Creation | Hempon Group</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #080d0c;
+        --panel: #101816;
+        --line: rgba(255, 255, 255, 0.1);
+        --text: #f2f7f4;
+        --muted: #9baaa3;
+        --mint: #75e4cc;
+        --teal: #11786d;
+        --max: 1080px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 95px;
+      }
+      body {
+        margin: 0;
+        background:
+          radial-gradient(
+            ellipse at 50% -10%,
+            rgba(17, 120, 109, 0.25),
+            transparent 42rem
+          ),
+          var(--bg);
+        color: var(--text);
+        font-family:
+          Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          sans-serif;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible,
+      textarea:focus-visible,
+      select:focus-visible {
+        outline: 2px solid var(--mint);
+        outline-offset: 3px;
+      }
+      .container {
+        width: min(var(--max), calc(100% - 40px));
+        margin: auto;
+      }
+      .announcement {
+        text-align: center;
+        padding: 8px 12px;
+        border-bottom: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 11px;
+      }
+      .announcement span,
+      .kicker {
+        color: var(--mint);
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background: #080d0cdb;
+        backdrop-filter: blur(18px);
+        border-bottom: 1px solid var(--line);
+      }
+      .nav {
+        min-height: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        font-weight: 800;
+        letter-spacing: -0.04em;
+      }
+      .brand img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        border-radius: 10px;
+      }
+      .brand-sub {
+        display: block;
+        color: var(--muted);
+        font-size: 9px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+      .nav-cta,
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border-radius: 12px;
+        padding: 12px 16px;
+        font-size: 12px;
+        font-weight: 750;
+        border: 1px solid var(--line);
+      }
+      .nav-cta {
+        border-radius: 999px;
+        color: var(--text);
+      }
+      .hero {
+        text-align: center;
+        padding: 85px 0 55px;
+      }
+      .eyebrow {
+        display: inline-block;
+        padding: 7px 12px;
+        border: 1px solid #75e4cc38;
+        border-radius: 999px;
+        background: #11786d20;
+        color: #b7f3e6;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+      h1 {
+        font-size: clamp(42px, 7vw, 76px);
+        line-height: 1;
+        letter-spacing: -0.075em;
+        margin: 24px 0 18px;
+      }
+      .gradient {
+        background: linear-gradient(100deg, #fff 10%, #a3f0df 72%, #4cc8b0);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      .hero-copy {
+        max-width: 680px;
+        margin: auto;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.9;
+      }
+      .actions {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 26px;
+      }
+      .primary {
+        background: var(--teal);
+        border-color: transparent;
+      }
+      .secondary {
+        background: #ffffff05;
+      }
+      .section {
+        padding: 35px 0 75px;
+      }
+      .layout {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 24px;
+        align-items: start;
+      }
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 26px;
+        background:
+          linear-gradient(155deg, #ffffff08, transparent 55%), var(--panel);
+      }
+      .kicker {
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+      h2 {
+        font-size: clamp(25px, 3vw, 34px);
+        line-height: 1.15;
+        letter-spacing: -0.05em;
+        margin: 8px 0 12px;
+      }
+      .muted {
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.9;
+      }
+      .service-list {
+        list-style: none;
+        padding: 0;
+        margin: 22px 0 0;
+        display: grid;
+        gap: 13px;
+      }
+      .service-list li {
+        display: flex;
+        gap: 10px;
+        color: #d4ded8;
+        font-size: 12px;
+      }
+      .service-list li:before {
+        content: "✓";
+        color: var(--mint);
+        font-weight: 800;
+      }
+      .contact-strip {
+        display: grid;
+        gap: 10px;
+        margin-top: 22px;
+      }
+      .contact-strip a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: 750;
+      }
+      .contact-strip a:first-child {
+        background: var(--teal);
+        border-color: transparent;
+      }
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      .field {
+        display: grid;
+        gap: 7px;
+      }
+      .field.full {
+        grid-column: 1/-1;
+      }
+      .field label {
+        font-size: 11px;
+        color: #d7e1db;
+        font-weight: 700;
+      }
+      .field input,
+      .field select,
+      .field textarea {
+        width: 100%;
+        border: 1px solid #ffffff1d;
+        border-radius: 11px;
+        background: #080e0c;
+        color: var(--text);
+        padding: 12px;
+        font: inherit;
+        font-size: 12px;
+      }
+      .field textarea {
+        min-height: 115px;
+        resize: vertical;
+      }
+      .field input::placeholder,
+      .field textarea::placeholder {
+        color: #72827a;
+      }
+      .submit {
+        width: 100%;
+        margin-top: 16px;
+        background: var(--teal);
+        color: #fff;
+        border: 0;
+        cursor: pointer;
+      }
+      .form-note {
+        font-size: 10px;
+        color: var(--muted);
+        margin: 10px 0 0;
+      }
+      .footer {
+        border-top: 1px solid var(--line);
+        padding: 24px 0;
+        color: var(--muted);
+        font-size: 10px;
+      }
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .footer-links {
+        display: flex;
+        gap: 17px;
+        flex-wrap: wrap;
+      }
+      .footer a:hover {
+        color: var(--mint);
+      }
+      @media (max-width: 760px) {
+        .layout {
+          grid-template-columns: 1fr;
+        }
+        .hero {
+          padding: 65px 0 40px;
+        }
+        .panel {
+          padding: 21px;
+        }
+      }
+      @media (max-width: 500px) {
+        .container {
+          width: calc(100% - 28px);
+        }
+        .nav {
+          min-height: 64px;
+        }
+        .brand img {
+          width: 34px;
+          height: 34px;
+        }
+        .brand {
+          font-size: 12px;
+        }
+        .nav-links {
+          gap: 9px;
+          font-size: 10px;
+        }
+        .nav-links .hide-mobile {
+          display: none;
+        }
+        .form-grid {
+          grid-template-columns: 1fr;
+        }
+        .field.full {
+          grid-column: auto;
+        }
+        .panel {
+          padding: 18px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="announcement">
+      Digital experiences built around your goals. <span>Hempon Group</span>
+    </div>
+    <header>
+      <div class="container nav">
+        <a class="brand" href="/" aria-label="Hempon Group downloads home"
+          ><img src="/HG.png" alt="" /><span
+            >HEMPON GROUP<span class="brand-sub"
+              >Software &amp; Technology</span
+            ></span
+          ></a
+        >
+        <nav class="nav-links">
+          <a class="hide-mobile" href="/#apps">Our apps</a
+          ><a class="nav-cta" href="https://www.hempongroup.co.ke/"
+            >Main website ↗</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="eyebrow">Your idea deserves a good website</div>
+          <h1>
+            Make your next move<br /><span class="gradient"
+              >visible online.</span
+            >
+          </h1>
+          <p class="hero-copy">
+            Whether you are starting a business, growing a professional
+            practice, promoting a campaign or showcasing your work, we can help
+            you build a clear, credible online presence that gives people the
+            information they need and an easy way to reach you.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#enquiry"
+              >Tell us about your website ↓</a
+            ><a
+              class="button secondary"
+              href="https://portfolio.hempongroup.co.ke/"
+              target="_blank"
+              rel="noopener"
+              >Explore our portfolio ↗</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container layout">
+          <div class="panel">
+            <div class="kicker">Website creation</div>
+            <h2>Designed for your business, not just the screen.</h2>
+            <p class="muted">
+              We work with you to shape the right pages, message and visual
+              direction for the people you want to reach. Start with a new
+              website or discuss refreshing an existing one.
+            </p>
+            <ul class="service-list">
+              <li>Business and company websites</li>
+              <li>Professional services and practice websites</li>
+              <li>Portfolio and personal brand websites</li>
+              <li>Political campaign and public-facing information websites</li>
+              <li>Landing pages for a product, service or event</li>
+              <li>Responsive layouts for phones, tablets and desktops</li>
+              <li>Contact forms, WhatsApp links and clear calls to action</li>
+              <li>Domain, hosting and ongoing support discussions</li>
+            </ul>
+            <div class="contact-strip">
+              <a
+                href="https://wa.me/254738219953"
+                target="_blank"
+                rel="noopener"
+                >Chat with us on WhatsApp ↗</a
+              ><a
+                href="mailto:hempongroup@gmail.com?subject=Website%20creation%20enquiry"
+                >Email us about your project ↗</a
+              ><a
+                href="https://portfolio.hempongroup.co.ke/projects"
+                target="_blank"
+                rel="noopener"
+                >View the Hempon Group portfolio ↗</a
+              ><a
+                href="https://www.hempongroup.co.ke/"
+                target="_blank"
+                rel="noopener"
+                >Visit our main website ↗</a
+              >
+            </div>
+          </div>
+          <div class="panel" id="enquiry">
+            <div class="kicker">Project enquiry</div>
+            <h2>What do you want to build?</h2>
+            <p class="muted">
+              Share a few details below. When you submit, WhatsApp will open
+              with your enquiry ready to send to
+              <strong>+254 738 219 953</strong>. Review it and tap Send in
+              WhatsApp.
+            </p>
+            <form id="websiteForm">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="name">Your name *</label
+                  ><input
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    required
+                    placeholder="Full name"
+                  />
+                </div>
+                <div class="field">
+                  <label for="business">Business / organisation</label
+                  ><input
+                    id="business"
+                    name="business"
+                    autocomplete="organization"
+                    placeholder="Name, if applicable"
+                  />
+                </div>
+                <div class="field">
+                  <label for="email">Email address *</label
+                  ><input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                    placeholder="you@example.com"
+                  />
+                </div>
+                <div class="field">
+                  <label for="phone">Phone / WhatsApp</label
+                  ><input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    autocomplete="tel"
+                    placeholder="Your contact number"
+                  />
+                </div>
+                <div class="field full">
+                  <label for="type">Type of website *</label
+                  ><select id="type" name="type" required>
+                    <option value="">Choose a website type</option>
+                    <option>Business / company website</option>
+                    <option>Professional services website</option>
+                    <option>Portfolio / personal brand</option>
+                    <option>Political campaign website</option>
+                    <option>Product or service landing page</option>
+                    <option>Online store / e-commerce</option>
+                    <option>Redesign an existing website</option>
+                    <option>Not sure yet — advise me</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="budget">Estimated budget</label
+                  ><select id="budget" name="budget">
+                    <option value="Not decided">Not decided</option>
+                    <option>Under KES 15,000</option>
+                    <option>KES 15,000–30,000</option>
+                    <option>KES 30,000–60,000</option>
+                    <option>KES 60,000+</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="timeline">When do you need it?</label
+                  ><select id="timeline" name="timeline">
+                    <option>Flexible / exploring</option>
+                    <option>As soon as possible</option>
+                    <option>Within 2–4 weeks</option>
+                    <option>Within 1–3 months</option>
+                  </select>
+                </div>
+                <div class="field full">
+                  <label for="details">Tell us about the website *</label
+                  ><textarea
+                    id="details"
+                    name="details"
+                    required
+                    placeholder="What does your organisation do? What should the website help you achieve? Include any pages, features or example websites you have in mind."
+                  ></textarea>
+                </div>
+                <div class="field full">
+                  <label for="existing"
+                    >Existing website or social page (optional)</label
+                  ><input
+                    id="existing"
+                    name="existing"
+                    type="url"
+                    placeholder="https://"
+                  />
+                </div>
+              </div>
+              <button class="button submit" type="submit">
+                Continue to WhatsApp with my enquiry ↗
+              </button>
+              <p class="form-note">
+                Your details are placed into a WhatsApp message for you to
+                review. This page does not submit the form to a database or send
+                it automatically.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span
+          >© <span id="year"></span> Hempon Group. All rights reserved.</span
+        >
+        <nav class="footer-links">
+          <a href="/">App catalogue</a
+          ><a href="https://portfolio.hempongroup.co.ke/">Portfolio</a
+          ><a href="https://www.hempongroup.co.ke/">Main website</a
+          ><a href="https://wa.me/254738219953">WhatsApp</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document
+        .getElementById("websiteForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const form = new FormData(event.currentTarget);
+          const labels = {
+            name: "Name",
+            business: "Business / organisation",
+            email: "Email",
+            phone: "Phone / WhatsApp",
+            type: "Website type",
+            budget: "Estimated budget",
+            timeline: "Timeline",
+            details: "Project details",
+            existing: "Existing website / social page",
+          };
+          const lines = [
+            "Hello Hempon Group, I would like to enquire about website creation.",
+            "",
+          ];
+          for (const [key, label] of Object.entries(labels)) {
+            const value = String(form.get(key) || "").trim();
+            if (value) lines.push(label + ": " + value);
+          }
+          lines.push(
+            "",
+            "Sent from the Hempon Group website creation enquiry page.",
+          );
+          const url =
+            "https://wa.me/254738219953?text=" +
+            encodeURIComponent(lines.join("\n"));
+          window.open(url, "_blank", "noopener,noreferrer");
+        });
+    </script>
+  </body>
+</html>

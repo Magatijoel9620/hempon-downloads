@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="HG.png" />
     <meta
       name="description"
-      content="Official Hempon Group downloads for Farmora, Landlord Ledger and InvoiceEasy."
+      content="Official Hempon Group apps, product links and website creation services."
     />
     <meta property="og:title" content="Hempon Group — Get Our Apps" />
     <meta
@@ -343,6 +343,8 @@
         filter: blur(50px);
         transition: opacity 0.3s;
       }
+      .app-card[data-page] { cursor: pointer; }
+      .app-card[data-page]:focus-visible { outline: 2px solid var(--mint); outline-offset: 4px; }
       .app-card:hover {
         transform: translateY(-5px);
         border-color: color-mix(in srgb, var(--accent), transparent 55%);
@@ -366,6 +368,18 @@
         border-radius: 17px;
         background: #ffffff08;
         overflow: hidden;
+      }
+      .app-monogram {
+        color: var(--accent);
+        font-size: 19px;
+        font-weight: 850;
+        letter-spacing: -0.08em;
+      }
+      .service-icon {
+        color: var(--mint);
+        font-size: 35px;
+        font-weight: 500;
+        background: #75e4cc12;
       }
       .app-icon img {
         width: 100%;
@@ -751,7 +765,7 @@
             Good software.<br /><span class="gradient">Simpler business.</span>
           </h1>
           <p class="hero-copy">
-            Purpose-built tools for farm operations, rental property management and invoicing. Choose an app to see its official Hempon Group download page and learn how it can support your work.
+            Explore practical business apps, productivity tools and finance software — or tell us about the website your business needs.
           </p>
           <div class="actions">
             <a class="button primary" href="#apps"
@@ -774,14 +788,13 @@
               <div class="kicker">The Hempon collection</div>
               <h2>Choose the tool for your work.</h2>
               <p class="section-description">
-                Three products. Three different challenges. One goal: making
-                everyday work easier.
+                Explore our business apps, productivity tools and finance solutions — with website services available when you are ready to grow online.
               </p>
             </div>
             <div class="platform">↗ Android + web options</div>
           </div>
           <div class="apps">
-            <article class="app-card" style="--accent: #8be0a9">
+            <article class="app-card" style="--accent: #8be0a9" data-page="/farmora/" tabindex="0" role="link" aria-label="Explore Farmora">
               <div class="app-top">
                 <div class="app-icon">
                   <img src="farmora_icon.png" alt="Farmora app icon" />
@@ -822,7 +835,7 @@
                 APK installer · Android · Web app available
               </div>
             </article>
-            <article class="app-card" style="--accent: #c9a4ff">
+            <article class="app-card" style="--accent: #c9a4ff" data-page="/landlord-ledger/" tabindex="0" role="link" aria-label="Explore Landlord Ledger">
               <div class="app-top">
                 <div class="app-icon">
                   <img src="launcher.png" alt="Landlord Ledger app icon" />
@@ -864,7 +877,7 @@
                 APK installer · Android · Web app available
               </div>
             </article>
-            <article class="app-card" style="--accent: #69d8ef">
+            <article class="app-card" style="--accent: #69d8ef" data-page="/invoice-easy/" tabindex="0" role="link" aria-label="Explore InvoiceEasy">
               <div class="app-top">
                 <div class="app-icon">
                   <img src="InvoiceEasy_Logo.png" alt="InvoiceEasy app logo" />
@@ -897,6 +910,30 @@
               </div>
               <div class="file-note">APK installer · Android</div>
             </article>
+            <article class="app-card" style="--accent: #8b72ff" data-page="/devpilot/" tabindex="0" role="link" aria-label="Explore DevPilot">
+              <div class="app-top"><div class="app-icon"><img src="HG.png" alt="Hempon Group logo for DevPilot" /></div><span class="tag">Web + PWA</span></div>
+              <h3>DevPilot</h3>
+              <p class="app-description">Bring projects, daily priorities and tasks into one focused workspace so you can keep meaningful work moving.</p>
+              <ul class="features"><li>Project and app organisation</li><li>Daily plans and task priorities</li><li>Progress and workload visibility</li></ul>
+              <div class="card-actions"><a class="button webapp" href="https://devpilot.hempongroup.co.ke/" target="_blank" rel="noopener">Open DevPilot ↗</a><a class="more-info" href="https://portfolio.hempongroup.co.ke/projects/building-devpilot-personal-productivity-app" target="_blank" rel="noopener">Explore DevPilot <span aria-hidden="true">↗</span></a></div>
+              <div class="file-note">Web app · Installable PWA</div>
+            </article>
+            <article class="app-card" style="--accent: #9d7bff" data-page="/finai/" tabindex="0" role="link" aria-label="Explore FinAI">
+              <div class="app-top"><div class="app-icon"><img src="finai.png" alt="FinAI logo" /></div><span class="tag">Web + PWA</span></div>
+              <h3>FinAI</h3>
+              <p class="app-description">Understand business finances with tools for sales, spending, stock and useful performance insights in one place.</p>
+              <ul class="features"><li>Income, expenses and sales</li><li>Stock and customer balances</li><li>Financial reports and AI insights</li></ul>
+              <div class="card-actions"><a class="button webapp" href="https://finai.hempongroup.co.ke/" target="_blank" rel="noopener">Open FinAI ↗</a><a class="more-info" href="https://portfolio.hempongroup.co.ke/projects/fintrack-ai" target="_blank" rel="noopener">Explore FinAI <span aria-hidden="true">↗</span></a></div>
+              <div class="file-note">Web app · Installable PWA</div>
+            </article>
+            <article class="app-card service-card" style="--accent: #75e4cc" data-page="/website-creation/" tabindex="0" role="link" aria-label="Explore website creation services">
+              <div class="app-top"><div class="app-icon service-icon" aria-hidden="true">↗</div><span class="tag">For businesses &amp; professionals</span></div>
+              <h3>Need a website for your business?</h3>
+              <p class="app-description">Turn your idea into a professional online presence with a website designed around your goals, customers and brand.</p>
+              <ul class="features"><li>Business and professional websites</li><li>Portfolio, service and campaign sites</li><li>Mobile-friendly design and contact paths</li></ul>
+              <div class="card-actions"><a class="button download" href="/website-creation/">Explore website services <span aria-hidden="true">↗</span></a><a class="more-info" href="https://portfolio.hempongroup.co.ke/" target="_blank" rel="noopener">View our portfolio <span aria-hidden="true">↗</span></a></div>
+              <div class="file-note">Tell us what you need — get a tailored follow-up</div>
+            </article>
           </div>
         </div>
       </section>
@@ -914,8 +951,15 @@
           </div>
         </div>
         <nav class="footer-links" aria-label="Footer navigation">
-          <a href="https://www.hempongroup.co.ke/">Website</a
-          ><a href="#apps">Downloads</a>
+          <a href="#apps">All apps</a>
+          <a href="/farmora/">Farmora</a>
+          <a href="/landlord-ledger/">Landlord Ledger</a>
+          <a href="/invoice-easy/">InvoiceEasy</a>
+          <a href="/devpilot/">DevPilot</a>
+          <a href="/finai/">FinAI</a>
+          <a href="/website-creation/">Website creation</a>
+          <a href="https://portfolio.hempongroup.co.ke/projects" target="_blank" rel="noopener">Portfolio ↗</a>
+          <a href="https://www.hempongroup.co.ke/" target="_blank" rel="noopener">Website ↗</a>
         </nav>
       </div>
     </footer>
@@ -936,6 +980,20 @@
         }),
       );
       // Respect the visitor's motion preference; native CSS handles reduced motion.
+      document.querySelectorAll(".app-card[data-page]").forEach((card) => {
+        const navigate = (event) => {
+          if (event.target.closest("a, button")) return;
+          window.location.href = card.dataset.page;
+        };
+        card.addEventListener("click", navigate);
+        card.addEventListener("keydown", (event) => {
+          if (event.target !== card) return;
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            window.location.href = card.dataset.page;
+          }
+        });
+      });
       document.querySelectorAll(".app-card").forEach((card) => {
         card.addEventListener("pointermove", (event) => {
           if (
